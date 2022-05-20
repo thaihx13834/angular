@@ -42,4 +42,40 @@ export class AppComponent {
   ];
 
   student = { name: 'Thais', id: 'ph123123' };
+
+  showStatus = true;
+
+  displayTable = 'block';
+
+  displayNone = 'none';
+
+  onClickBtn() {
+    this.showStatus = !this.showStatus;
+    // this.displayNone = this.displayNone ? this.displayNone : 'none';
+  }
+
+  champ: any = { name: '', dame: 0, price: 0, avatar: '', df: 0, speed: '' };
+
+  onInput(
+    event: any,
+    key: 'name' | 'avatar' | 'price' | 'dame' | 'df' | 'speed'
+  ) {
+    // console.log(inputname, event.target.value);
+    this.champ[key] = event.target.value;
+  }
+
+  inputVl = {};
+
+  onSubmit() {
+    console.log(this.champ);
+    this.champions.push(this.champ);
+    this.champ = {
+      name: '',
+      dame: '',
+      price: '',
+      avatar: '',
+      df: '',
+      speed: '',
+    };
+  }
 }

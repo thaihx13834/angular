@@ -10,6 +10,9 @@ import { NameComponent } from './name/name.component';
 import { IdentityComponent } from './identity/identity.component';
 import { DameComponent } from './dame/dame.component';
 import { ImageComponent } from './image/image.component';
+import { FormComponent } from './form/form.component';
+import { FormsModule } from '@angular/forms';
+import { ValidateComponent } from './components/validate/validate.component';
 
 @NgModule({
   declarations: [
@@ -19,14 +22,12 @@ import { ImageComponent } from './image/image.component';
     NameComponent,
     IdentityComponent,
     DameComponent,
-    ImageComponent
+    ImageComponent,
+    FormComponent,
+    ValidateComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NgbModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, NgbModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
