@@ -1,0 +1,8 @@
+<app-user-form
+  (handleSubmit)="onCreateUser($event)"
+  [inputValues]="formValue"
+></app-user-form>
+<app-user-list
+  [users]="users"
+  (handleSubmit)="onBindData($event)"
+></app-user-list>

@@ -359,7 +359,9 @@
 </div>
 
 <div class="content" role="main">
-  <button class="btn btn-primary" (click)="onClickBtn()">
+  <app-user></app-user>
+
+  <!-- <button class="btn btn-primary" (click)="onClickBtn()">
     {{ showStatus ? "An" : "Hien" }}
   </button>
   <div>Ten SV: <app-name [name]="student.name"></app-name></div>
@@ -368,10 +370,10 @@
   <div>
     <p>Form dang nhapus</p>
     <app-form></app-form>
-  </div>
+  </div> -->
 
-  <div>
-    <!-- Su kien input <input type="text" (input)="onInput($event, 'oze oze')" /> -->
+  <!-- <div>
+    Su kien input <input type="text" (input)="onInput($event, 'oze oze')" />
     <h3>Champ</h3>
     <label for="">Name</label>
     <input type="text" (input)="onInput($event, 'name')" [value]="champ.name" />
@@ -410,9 +412,9 @@
     <br />
 
     <button clss="btn btn-primary" (click)="onSubmit()">Submit</button>
-  </div>
+  </div> -->
   <!-- <app-table [champs]="champions" *ngIf="showStatus"></app-table> -->
-  <app-table [champs]="champions" *ngIf="showStatus"></app-table>
+  <!-- <app-table [champs]="champions" *ngIf="showStatus"></app-table> -->
 
   <!-- Links -->
   <div class="card-container">

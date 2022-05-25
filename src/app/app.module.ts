@@ -13,6 +13,10 @@ import { ImageComponent } from './image/image.component';
 import { FormComponent } from './form/form.component';
 import { FormsModule } from '@angular/forms';
 import { ValidateComponent } from './components/validate/validate.component';
+import { UserComponent } from './user/user.component';
+import { ListComponent } from './user/list/list.component';
+
+import { UserFormComponent } from './user/form/form.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +29,9 @@ import { ValidateComponent } from './components/validate/validate.component';
     ImageComponent,
     FormComponent,
     ValidateComponent,
+    UserComponent,
+    ListComponent,
+    UserFormComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, FormsModule],
   providers: [],
